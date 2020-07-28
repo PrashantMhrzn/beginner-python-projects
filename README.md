@@ -1,3 +1,3 @@
-## Beginner Python Projects Solutions
+# Beginner Python Projects Solutions
 
-jorgegonzalez/beginner-projects
+[a relative link]jorgegonzalez/beginner-projects
