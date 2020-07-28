@@ -4,16 +4,13 @@ def armstong(num):
         arm = 0
         for i in num:
             arm += (int(i)**count)
-        if arm == int(num):
-            print(f'{num} is an Armstrong') 
-        else:
-            print(f'{num} is not an Armstrong') 
+        return f'{num} is an Armstrong' if arm == int(num) else f'{num} is not an Armstrong'
     else:
-        print('All one digit numbers are Armstrong numbers!')
+        return 'All one digit numbers are Armstrong numbers!'
 
 
 try:
     usr_inp = input('Enter a number to check if Armstrong: ')
-    armstong(usr_inp)
+    print(armstong(usr_inp))
 except ValueError:
     print('Enter a number!!')
