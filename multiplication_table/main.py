@@ -15,4 +15,5 @@ def mul_table(num):
     return ''
 
 
-print(mul_table(5))
+usr_inp = int(input('enter a number to see their multiplication table: '))
+print(mul_table(usr_inp))

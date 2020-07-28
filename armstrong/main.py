@@ -1,12 +1,16 @@
-def armstong():
-    inp=input("enter a num: ")
-    count=len(inp)
-    arm=0
-    for i in inp:
-        arm+=(int(i)**count)
-    if arm == int(inp):
+def armstong(num):
+    count = len(num)
+    arm = 0
+    for i in num:
+        arm += (int(i)**count)
+    if arm == int(num):
         print("armstrong")
     else:
         print("not armstrong")
 
-armstong()
+
+try:
+    usr_inp = input('enter a number to check if armstrong: ')
+    armstong(usr_inp)
+except ValueError:
+    print('enter a number!!')
