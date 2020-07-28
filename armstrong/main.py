@@ -1,16 +1,19 @@
 def armstong(num):
-    count = len(num)
-    arm = 0
-    for i in num:
-        arm += (int(i)**count)
-    if arm == int(num):
-        print("armstrong")
+    if len(num) > 1:
+        count = len(num)
+        arm = 0
+        for i in num:
+            arm += (int(i)**count)
+        if arm == int(num):
+            print(f'{num} is an Armstrong') 
+        else:
+            print(f'{num} is not an Armstrong') 
     else:
-        print("not armstrong")
+        print('All one digit numbers are Armstrong numbers!')
 
 
 try:
-    usr_inp = input('enter a number to check if armstrong: ')
+    usr_inp = input('Enter a number to check if Armstrong: ')
     armstong(usr_inp)
 except ValueError:
-    print('enter a number!!')
+    print('Enter a number!!')

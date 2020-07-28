@@ -1,14 +1,14 @@
-def is_prime(x):
-    if x > 1:
-        for i in range(2, x):
-            if (x % i) == 0:
-                print("not prime")
+def is_prime(num):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                print(f'{num} is not a prime number')
                 break
         else:
-            print("prime")
+            print(f'{num} is a prime number')
     else:
-        print("not prime")
+        print(f'{num} is not a prime number')
 
 
-usr_inp = int(input('enter a number to check if prime: '))
+usr_inp = int(input('Enter a number to check if prime: '))
 is_prime(usr_inp)
