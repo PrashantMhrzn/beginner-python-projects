@@ -1,10 +1,6 @@
 def palindrome(num):
     num = str(num)
-    if (num[::-1]) == num:
-        print("palindrome")
-    else:
-        print("not palindrome")
-    return ''
+    return 'palindrome' if (num[::-1]) == num else 'not palindrome'
 
 
-print(palindrome(231))
+print(palindrome(121))
