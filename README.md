@@ -1,3 +1,3 @@
-# beginner-python-projects
+## Beginner Python Projects Solutions
 
-https://github.com/jorgegonzalez/beginner-projects
+jorgegonzalez/beginner-projects
